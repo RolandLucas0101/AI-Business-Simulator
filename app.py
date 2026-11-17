@@ -1,3 +1,4 @@
+
 """Career Venture Lab — AER-2 Stage 1. Run: streamlit run app.py.
 
 The accounting/math engine uses the standard library. UI dependencies are loaded
@@ -19,6 +20,7 @@ from pathlib import Path
 from uuid import uuid4
 
 TEAM, COURSE, PATHWAY = "Team1", "Precalculus", "AER-2"
+BUILD_ID = "AER2-stage1-startup-2026-11-17"
 LEVELS = ("Foundation", "Applied", "Advanced")
 SKILLS = ("Rational Average Cost Functions", "Function Composition & Domain Constraints",
           "Seasonal Trigonometric / Growth Modeling")
@@ -93,4 +95,7 @@ def validate_config(c):
         integer(c[k], k)
     integer(c["working_days"], "working_days", 1)
     if c["working_days"] > 31:
-        raise ValueError("working_days cannot exceed 31.")
+
+
+
+
